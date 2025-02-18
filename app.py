@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 #-------------------
 
 # Configuração para tela cheia (modo wide)
-st.set_page_config(layout="wide", page_title="Resultados CNCA", page_icon="CNCA.png")
+st.set_page_config(layout="wide", page_title="Resultados CNCA", page_icon="CNCA.png", initial_sidebar_state="auto", theme="light")
 
 # Adicionando Kanit via CSS no Streamlit
 st.markdown(
