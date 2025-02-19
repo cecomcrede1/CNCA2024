@@ -220,7 +220,7 @@ if "authenticated" not in st.session_state:
 
 if not st.session_state["authenticated"]:
     st.image("CNCA.png", width=150)
-    st.title("Login")
+    st.title("Entrar")
     username = st.text_input("Usuário")
     password = st.text_input("Senha", type="password")
     
