@@ -289,9 +289,7 @@ else:
     etapa_filtro = st.sidebar.selectbox("Selecione a Etapa", df["Etapa"].unique())
     componente_filtro = st.sidebar.selectbox("Selecione o Componente Curricular", df["Componente Curricular"].unique())
 
-
-    if st.sidebar.button("Aplicar Filtros e Analisar"):
-        df_filtrado = df[(df["Etapa"] == etapa_filtro) & (df["Componente Curricular"] == componente_filtro)].copy()
+    df_filtrado = df[(df["Etapa"] == etapa_filtro) & (df["Componente Curricular"] == componente_filtro)].copy()
         # st.text('df_filtrado')
         # st.dataframe(df_filtrado, height=400, width=1000)
         
